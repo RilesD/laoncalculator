@@ -17,7 +17,7 @@
            let n=document.getElementById("num2").value;
            let r=document.getElementById("num3").value;
            let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));
-           document.getElementById("rslt").innerHTML=P;
+           document.getElementById("rslt").innerHTML=P.toFixed(2);
          }
 
       
@@ -30,13 +30,16 @@
       <br>
       <input id="num1" style="width: 120px;">
     <br>
+    <br>
       Years: How quickly would you like to pay it back?
     <br>
       <input id="num2" style="width: 120px;">
     <br>
-      Interest rate: What is your interest percentage?
+    <br>
+      Interest rate:
     <br>
       <input id="num3" style="width: 120px;">
+    <br>
     <br>
     <button onclick="calc()">Calculate Monthly Payment</button>
  
