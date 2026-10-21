@@ -17,7 +17,7 @@
            let n=document.getElementById("num2").value;
            let r=document.getElementById("num3").value;
            let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));
-           document.getElementById("rslt").innerHTML="With a loan of $"+PV+"and an interest rate of"+r+"% your monthly payments will be $"+P.toFixed(2);
+           document.getElementById("rslt").innerHTML="With a loan of $"+PV+" and an interest rate of "+r+"% your monthly payments will be $"+P.toFixed(2);
          }
 
       
@@ -25,7 +25,8 @@
   </head>
   <body>
     <br>
-    <h2>My JavaScript Powered Loan Calculator</h2>
+    <h2>JavaScript Powered Loan Calculator</h2>
+    <hr>
     <p>Loan Amount: How much would you like to borrow?
       <br>
       <input id="num1" style="width: 120px;">
@@ -46,7 +47,9 @@
     
     </p>
     <p>
-      Result: <span id="rslt"></span>
+      Result:
+      <br>
+      <span id="rslt"></span>
     </p>
  
   </body>
