@@ -1,0 +1,46 @@
+<!DOCTYPE.HTML>
+<html>
+  <head>
+    <title>Simple Calculator</title>
+    <style>
+      html, body {
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+        min-height: 100vh;
+      }
+        </style>
+    <script>
+
+         function calc() {
+           let PV=document.getElementById("num1").value;
+           let n=document.getElementById("num2").value;
+           let r=document.getElementById("num3").value;
+           let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));
+
+         }
+
+
+         }
+      
+    </script>
+  </head>
+  <body>
+    <br>
+    <h2>My JavaScript Powered Loan Calculator</h2>
+    <p>Loan Amount: How much would you like to borrow?<input id="num1" style="width: 120px;">
+      <br>
+      Years to pay it off:<input id="num2" style="width: 120px;">
+      <br>
+      Interest rate:<input id="num3" style="width: 120px;">
+      <br>
+    <button onclick="calc()">Calculate Monthly Payment</button>
+ 
+    
+    </p>
+    <p>
+      Result: <span id="rslt"></span>
+    </p>
+ 
+  </body>
+</html>
