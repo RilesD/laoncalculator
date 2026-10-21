@@ -17,7 +17,7 @@
            let n=document.getElementById("num2").value;
            let r=document.getElementById("num3").value;
            let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));
-
+           document.getElementById("rslt").innerHTML=P;
          }
 
       
@@ -26,18 +26,18 @@
   <body>
     <br>
     <h2>My JavaScript Powered Loan Calculator</h2>
-    <p>Loan Amount: How much would you like to borrow?<input id="num1" style="width: 120px;">
+    <p><input id="num1" style="width: 120px;">Loan Amount: How much would you like to borrow?
       <br>
-      Years to pay it off:<input id="num2" style="width: 120px;">
+      <input id="num2" style="width: 120px;">Years to pay it off
       <br>
-      Interest rate:<input id="num3" style="width: 120px;">
+      <input id="num3" style="width: 120px;">Interest rate
       <br>
     <button onclick="calc()">Calculate Monthly Payment</button>
  
     
     </p>
     <p>
-      Result: <span id="P"></span>
+      Result: <span id="rslt"></span>
     </p>
  
   </body>
