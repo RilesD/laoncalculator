@@ -1,7 +1,7 @@
 <!DOCTYPE.HTML>
 <html>
   <head>
-    <title>Simple Calculator</title>
+    <title>Loan Calculator</title>
     <style>
       html, body {
         background-color: #000000;
@@ -17,7 +17,7 @@
            let n=document.getElementById("num2").value;
            let r=document.getElementById("num3").value;
            let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));
-           document.getElementById("rslt").innerHTML=P.toFixed(2);
+           document.getElementById("rslt").innerHTML="With a loan of $"+PV+"and an interest rate of"+r+"% your monthly payments will be $"+P.toFixed(2);
          }
 
       
